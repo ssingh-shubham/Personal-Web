@@ -1,0 +1,628 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #111;
+    color: #fff;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent ;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: brown ;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: red;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+
+
+@media (max-width: 995px) {
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid red ;
+        border-bottom: 3px solid red;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem ;
+        background-color: #1b1b1b;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid red;
+    }
+    
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+
+}
+
+
+
+.home{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1,h3{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+span{
+    color: red;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    
+    width: 28vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px red;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover{
+
+    transform: scale(1.1);
+    font-size: 1.8rem;
+    font-weight: 500;
+    box-shadow:  0 0 25px red,
+    0 0 50px red,
+    0 0 75px red,
+    0 0 100px red
+    ;
+       
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent ;
+    border: 0.2rem solid red;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: red;
+}
+
+.social-icons a:hover{
+    color: black;
+    background-color: red;
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px red;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color:red;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid red;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+    background-color: red;
+    color: #111;
+    box-shadow: 0 0 25px red;
+}
+
+
+
+/* Responsive */
+
+
+@media (max-width: 1000px) {
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media (max-width:995px){
+    .home{
+        flex-direction: column;
+    }
+    .home-content{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 40vh;
+        margin-top: 4rem;
+    }
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: brown;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+/* Skills section styles */
+.skills {
+    padding: 8rem 9%;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 3.5rem;
+    color: red;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills-intro {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.skills ul {
+    list-style: none;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills li {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    background-color: #222;
+    border-radius: 0.5rem;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.skills li:hover {
+    background-color: red;
+    color: #111;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px red;
+}
+
+/* Responsive Styles */
+@media (max-width: 995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        padding: 1rem;
+        background-color: #1b1b1b;
+        border-left: 3px solid red;
+        border-bottom: 3px solid red;
+        border-bottom-left-radius: 2rem;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .skills li {
+        width: 80%;
+    }
+}
+
+
+.education {
+    padding: 8rem 9%;
+    color: #fff;
+}
+
+.education h1 {
+    font-size: 3.5rem;
+    color: red;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.edu-item {
+    background-color: #222;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.edu-item h2 {
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 0.5rem;
+}
+
+.edu-item p {
+    font-size: 1.6rem;
+    color: #ccc;
+    margin: 0.5rem 0;
+}
+
+.edu-item p strong {
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: brown;
+    font-weight: 800;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: red;
+}
+
+.experience {
+    padding: 5rem 9% 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 3rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.project {
+    background-color: #222;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.project:hover .project-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-description p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.project a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: brown;
+    font-weight: 800;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: red;
+}
+
+.contact {
+    padding: 5rem 9% 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 3rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-item {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.info-item h3 {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.info-item p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.info-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
