@@ -4,9 +4,9 @@ var typed = new Typed(".typewriter-text ",
         strings: [" ",
             "Software Development",
            
-            "Machine Learning Algorithmns",
+            "Machine Learning Algorithms",
            
-            "Deep Learning Algorithmns",
+            "Deep Learning Algorithms",
            
             "Cloud Computing",
            
