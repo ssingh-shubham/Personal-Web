@@ -468,7 +468,8 @@ nav a.active {
     text-align: center;
 }
 
-h2 {
+h1 {
+    margin-top: 25px;
     font-size: 3rem;
     color: red;
     margin-bottom: 3rem;
@@ -583,7 +584,8 @@ nav a.active {
     text-align: center;
 }
 
-h2 {
+h1 {
+    margin-top: 25px;
     font-size: 3rem;
     color: red;
     margin-bottom: 3rem;
