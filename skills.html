@@ -1,31 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Skills - Shubham Singh</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Shubham Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      width: 100%;
+      background-color: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem 9%;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 3rem;
+      color: brown;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+      color: red;
+    }
+
+    nav a {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-left: 4rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: red;
+      border-bottom: 3px solid red;
+    }
+
+    .skills {
+      padding: 12rem 9% 5rem;
+      min-height: 100vh;
+    }
+
+    .skills h1 {
+      font-size: 3.8rem;
+      text-align: center;
+      color: red;
+      margin-bottom: 4rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .skills-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background-color: #222;
+      border: 1.5px solid red;
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
+    }
+
+    .skill-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px red;
+    }
+
+    .skill-card h2 {
+      color: red;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card ul {
+      list-style: disc;
+      padding-left: 2rem;
+    }
+
+    .skill-card li {
+      font-size: 1.5rem;
+      color: #ddd;
+      margin-bottom: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        padding: 1rem;
+        background-color: #1b1b1b;
+        border-left: 3px solid red;
+        border-bottom: 3px solid red;
+        border-bottom-left-radius: 2rem;
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">SHUBHAM</a>
-        <nav>
-            <a href="Shubham Singh Resume.pdf">Resume</a>
-            <a href="skills.html">Skills</a>
-            <a href="education.html">Education</a>
-            <a href="projects.html" >Projects</a>
-            <a href="contact.html" >Contact</a>
-        </nav>
-    </header>
-    <section class="skills">
-        <h1>My Skills</h1>
+  <header>
+    <a href="index.html" class="logo">SHUBHAM</a>
+    <nav>
+      <a href="Shubham Singh Resume.pdf">Resume</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills">
+    <h1>My Skills</h1>
+    <div class="skills-columns">
+
+      <div class="skill-card">
+        <h2>Programming Languages</h2>
         <ul>
-            <li>Software Development</li>
-            <li>Machine Learning Algorithms</li>
-            <li>Deep Learning Algorithms</li>
-            <li>Cloud Computing</li>
-            <li>Cybersecurity</li>
+          <li>Python, JavaScript, Java, C++, SQL</li>
         </ul>
-    </section>
+      </div>
+
+      <div class="skill-card">
+        <h2>Full-Stack Development</h2>
+        <ul>
+          <li>React.js, Node.js, Express.js, HTML, CSS</li>
+          <li>MERN Stack, REST APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Cloud & DevOps</h2>
+        <ul>
+          <li>AWS (EC2, S3), Google Cloud, Firebase</li>
+          <li>Git, GitHub, Docker, CI/CD</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Machine Learning & AI</h2>
+        <ul>
+          <li>TensorFlow, PyTorch, Scikit-Learn</li>
+          <li>OpenCV, MiniLM v6, YOLOv5</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Data Analysis</h2>
+        <ul>
+          <li>Pandas, NumPy, Power BI, Tableau</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Databases</h2>
+        <ul>
+          <li>MongoDB, MySQL, PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>IoT & Embedded</h2>
+        <ul>
+          <li>NodeMCU, Arduino, Raspberry Pi</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Other Skills</h2>
+        <ul>
+          <li>SCORM Development</li>
+          <li>Cybersecurity (Basic)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
 </body>
 </html>
