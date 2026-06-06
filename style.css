@@ -119,7 +119,12 @@ section{
     background-color: black;
 }
 
-.home .home-content h1,h3{
+.home-content{
+    max-width: 72rem;
+}
+
+.home .home-content h1,
+.home .home-content h3{
     font-size: 5rem;
     font-weight: 700;
     color: #fff;
@@ -132,33 +137,36 @@ span{
 
 .home-content p{
     font-size: 1.6rem;
+    max-width: 68rem;
+    margin-top: 1.4rem;
+    color: #d6d6d6;
+    line-height: 1.75;
 }
 
 
 
 .home-img{
     border-radius: 50%;
+    padding: 0.8rem;
+    background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
 }
 
 .home-img img{
-    
     width: 28vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
-    box-shadow: 0 0 25px red;
+    border: 0.4rem solid rgba(255,255,255,0.12);
+    box-shadow: 0 1.8rem 4rem rgba(0,0,0,0.55);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
 .home-img img:hover{
-
-    transform: scale(1.1);
-    font-size: 1.8rem;
-    font-weight: 500;
-    box-shadow:  0 0 25px red,
-    0 0 50px red,
-    0 0 75px red,
-    0 0 100px red
-    ;
+    transform: scale(1.04);
+    border-color: rgba(255,0,0,0.35);
+    box-shadow: 0 2.4rem 5rem rgba(0,0,0,0.65);
        
 }
 
@@ -220,14 +228,20 @@ span{
 @media (max-width:995px){
     .home{
         flex-direction: column;
+        padding-top: 10rem;
     }
     .home-content{
         font-size: 5rem;
+        text-align: center;
     }
 
     .home-img img{
         width: 40vh;
         margin-top: 4rem;
+    }
+
+    .home-content p{
+        text-align: left;
     }
 
 
