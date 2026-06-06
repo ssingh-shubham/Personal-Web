@@ -120,7 +120,9 @@ section{
 }
 
 .home-content{
+    width: 72rem;
     max-width: 72rem;
+    flex: 0 1 72rem;
 }
 
 .home .home-content h1,
@@ -129,6 +131,22 @@ section{
     font-weight: 700;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.home .home-content h3{
+    min-height: 12rem;
+    line-height: 1.2;
+}
+
+.typewriter-text{
+    display: inline-block;
+    min-height: 6rem;
+    white-space: nowrap;
+}
+
+.typed-cursor{
+    display: inline-block;
+    color: red;
 }
 
 span{
@@ -149,10 +167,11 @@ span{
     border-radius: 50%;
     padding: 0.8rem;
     background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+    flex: 0 0 clamp(24rem, 28vw, 40rem);
 }
 
 .home-img img{
-    width: 28vw;
+    width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center top;
@@ -231,8 +250,20 @@ span{
         padding-top: 10rem;
     }
     .home-content{
+        width: 100%;
+        max-width: 72rem;
+        flex: 0 1 auto;
         font-size: 5rem;
         text-align: center;
+    }
+
+    .home .home-content h1,
+    .home .home-content h3{
+        font-size: 3.8rem;
+    }
+
+    .home .home-content h3{
+        min-height: 9.5rem;
     }
 
     .home-img img{
@@ -245,6 +276,22 @@ span{
     }
 
 
+}
+
+@media (max-width:500px){
+    .home .home-content h1,
+    .home .home-content h3{
+        font-size: 3rem;
+    }
+
+    .home .home-content h3{
+        min-height: 11rem;
+    }
+
+    .typewriter-text{
+        min-height: 7rem;
+        white-space: normal;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
